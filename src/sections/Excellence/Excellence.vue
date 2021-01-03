@@ -1,12 +1,14 @@
 <template>
-  <div class="grid grid-cols-2 gap-6">
-    <div v-for="(item, index) in bars" :key="index">
-      <div class="py-2">
-        {{ item.name }}aaasdasawfw
-      </div>
+  <div class="space-y-8 md:grid grid-cols-2 gap-6 px-4">
+    <div v-for="(item, index) in bars" :key="index" class="mt-8">
+      <div class="py-2">{{ item.name }}</div>
       <div class="bg-gray-300 rounded-md">
         <div
-          class="h-5 bg-indigo-400 rounded-md"
+          :class="[
+            item.color === 'gray'
+              ? 'bg-' + item.color + '-600 h-5 rounded-md'
+              : 'bg-' + item.color + '-400 h-5 rounded-md',
+          ]"
           :ref="item.name"
           style="width: 20px"
         ></div>
@@ -23,28 +25,34 @@ export default {
     return {
       bars: [
         {
-          name: "a",
+          name: "AFFILIATE MARKETING",
+          color: "pink",
           percent: "60%",
         },
         {
-          name: "b",
+          name: "STRATEGY AND CONSULTING",
           percent: "90%",
+          color: "green",
         },
         {
-          name: "c",
+          name: "SEARCH ENGINE MARKETING",
           percent: "85%",
+          color: "blue",
         },
         {
-          name: "d",
+          name: "MEDIA BUYING AND PLANNING",
           percent: "70%",
+          color: "yellow",
         },
         {
-          name: "e",
+          name: "MOBILE MARKETING",
           percent: "40%",
+          color: "purple",
         },
         {
-          name: "f",
+          name: "SOCIAL MEDIA AND ORM",
           percent: "99%",
+          color: "gray",
         },
       ],
     };

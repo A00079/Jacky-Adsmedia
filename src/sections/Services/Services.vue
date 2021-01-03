@@ -1,8 +1,8 @@
 <template>
-  <div class="grid grid-cols-4 gap-10">
+  <div class="space-y-6 md:grid grid-cols-4 gap-10 px-4">
     <div v-for="(item, index) in test" :key="index">
       <Card
-        heading="PERFORMANCE PROGRAMMATIC WAY"
+        heading="PERFORMANCE PROGRAMMATIC"
         content="With our breakthrough technology we team historical user data and artificial intelligence that achieve performance goals."
       />
     </div>
