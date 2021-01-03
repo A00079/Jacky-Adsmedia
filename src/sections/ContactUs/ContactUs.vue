@@ -14,8 +14,7 @@
           marginwidth="0"
           scrolling="no"
           src="https://maps.google.com/maps?q=sunshine%20commercial%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
-          style="filter:.0
-           opacity(0.8)"
+          style="filter: 0 opacity(0.8)"
         ></iframe>
         <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
           <div class="lg:w-1/2 px-6">
@@ -51,7 +50,7 @@
         <h2 class="text-gray-900 pb-5 text-lg mb-1 font-medium title-font">
           Connect With Us
         </h2>
-        
+
         <div class="relative mb-4">
           <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
           <input
