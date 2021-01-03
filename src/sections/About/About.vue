@@ -134,7 +134,7 @@
       >
         Our Offering
       </button>
-      <div class="flex-column mt-6">
+      <div class="flex-column mt-6 md:hidden lg:hidden">
         <div style="background: #ff8657" class="p-3 rounded-2xl shadow-xl">
           <h1 class="text-xl font-bold text-white">Jump back in!</h1>
           <div class="mt-4 mb-10">
